@@ -38,3 +38,12 @@ jwt:
   # Replace this with your own! Example shown only for local/dev.
   secret: "bXktdmVyeS1sb25nLWFuZC1zYWZlLXN1cGVyLXNlY3JldC1rZXktdGhhdC1pcy1iYXNlNjQ="
   expiration-ms: 3600000   # 1 hour = 3600000 ms
+
+logging:
+  level:
+    root: INFO
+    com.capstone.mind.backend: DEBUG   
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} | %-5level | %logger{36} | %msg%n"
+  file:
+    name: logs/app.log
