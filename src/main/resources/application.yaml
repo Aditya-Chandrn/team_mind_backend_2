@@ -41,8 +41,8 @@ cors:
 jwt:
   # Use a BASE64-encoded secret of at least 256 bits (>= 32 bytes after decode)
   # Replace this with your own! Example shown only for local/dev.
-  secret: "bXktdmVyeS1sb25nLWFuZC1zYWZlLXN1cGVyLXNlY3JldC1rZXktdGhhdC1pcy1iYXNlNjQ="
-  expiration-ms: 3600000   # 1 hour = 3600000 ms
+  secret: ${JWT_SECRET}
+  expiration-ms: 3600000 # 1 hour = 3600000 ms
 
 logging:
   level:
@@ -50,7 +50,7 @@ logging:
     com:
       capstone:
         mind:
-          backend: DEBUG      
+          backend: DEBUG
       io:
         github:
           resilience4j: DEBUG

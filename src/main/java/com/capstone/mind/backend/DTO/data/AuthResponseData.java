@@ -4,7 +4,7 @@ public class AuthResponseData {
     private String email;
     private String fname;
     private String lname;
-    private String token; // NEW
+    private String token;
 
     public AuthResponseData() {}
 
