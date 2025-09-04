@@ -1,12 +1,14 @@
 server:
-  port: ${PORT}
+  port: ${PORT:8080}
+
 
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/Team1}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:ARPI}
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
