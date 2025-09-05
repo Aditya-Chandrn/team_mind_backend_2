@@ -56,7 +56,7 @@ public class JwtService {
         return subject.equals(email) && !isExpired(token);
     }
 
-    public boolean validateToken(String token) {
+    public boolean validateToken(String token, User user) {
         try {
             getAllClaims(token); // will throw if invalid
             return true;
